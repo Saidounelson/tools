@@ -1,0 +1,29 @@
+# Logfile created on 2024-01-04 13:46:05 +0000 by logger.rb/66358
+{"severity":"DEBUG","time":"2024-01-04T13:46:05.152Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2024-01-04T13:46:06.416Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.203Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.261Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Lock timeout is set","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2024-01-04T13:46:30.285Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_000000 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.304Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202401 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.316Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202402 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.332Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202403 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.346Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202404 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.363Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202405 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.379Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202406 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.391Z","correlation_id":null,"message":"Created partition audit_events_part_5fc467ac26_202407 for table audit_events_part_5fc467ac26"}
+{"severity":"INFO","time":"2024-01-04T13:46:30.396Z","correlation_id":null,"method":"with_lock_retries","class":"Gitlab::Database::Partitioning::PartitionCreator","message":"Migration finished","current_iteration":1,"lock_timeout_in_ms":100}
+{"severity":"INFO","time":"2024-01-04T13:46:31.930Z","correlation_id":null,"message":"User \"Administrator\" (admin@example.com) was created"}
+{"severity":"INFO","time":"2024-01-04T13:46:32.220Z","correlation_id":null,"message":"Group \"GitLab Instance\" was created"}
+{"severity":"ERROR","time":"2024-01-04T13:46:33.253Z","correlation_id":null,"message":"Unable to save project. Error: 14:failed to connect to all addresses. debug_error_string:{\"created\":\"@1704375993.248762694\",\"description\":\"Failed to pick subchannel\",\"file\":\"src/core/ext/filters/client_channel/client_channel.cc\",\"file_line\":3952,\"referenced_errors\":[{\"created\":\"@1704375993.248761377\",\"description\":\"failed to connect to all addresses\",\"file\":\"src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc\",\"file_line\":394,\"grpc_status\":14}]} Project ID: 1"}
+{"severity":"ERROR","time":"2024-01-04T13:46:33.692Z","correlation_id":null,"message":"Cannot obtain an exclusive lease. There must be another instance already in execution."}
+{"severity":"INFO","time":"2024-01-04T13:47:08.519Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2024-01-04T13:47:08.511Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"DEBUG","time":"2024-01-04T13:47:50.708Z","correlation_id":null,"message":"ActiveRecord connection disconnected"}
+{"severity":"DEBUG","time":"2024-01-04T13:47:51.162Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{"severity":"DEBUG","time":"2024-01-04T13:47:51.254Z","correlation_id":null,"message":"ActiveRecord connection established"}
+{":severity":"DEBUG",":time":"2024-01-04T13:47:54.485Z","correlation_id":null,":message":"ActiveRecord connection established"}
+{"severity":"INFO","time":"2024-01-04T13:47:55.825Z","correlation_id":null,"message":"Checking state of dynamic postgres partitions"}
+{"severity":"INFO","time":"2024-01-04T13:54:10.167Z","correlation_id":"cyIzen0xIo9","message":"Successful Login: username=root ip=172.21.0.1 method=standard admin=true"}
+{"severity":"ERROR","time":"2024-01-04T13:54:53.196Z","correlation_id":"SBhJnTmCe7","message":"Unable to save project. Error: 14:failed to connect to all addresses. debug_error_string:{\"created\":\"@1704376493.189590641\",\"description\":\"Failed to pick subchannel\",\"file\":\"src/core/ext/filters/client_channel/client_channel.cc\",\"file_line\":3952,\"referenced_errors\":[{\"created\":\"@1704376491.339921582\",\"description\":\"failed to connect to all addresses\",\"file\":\"src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc\",\"file_line\":394,\"grpc_status\":14}]}"}
+{"severity":"INFO","time":"2024-01-04T13:55:38.223Z","correlation_id":"1hZBEzPMs21","message":"User \"test\" (test@gmail.com) was created"}
+{"severity":"INFO","time":"2024-01-04T14:00:28.886Z","correlation_id":"3c47b2699e6b5702ef1ee4b9211cce7c","message":"StuckCiJobsWorker: Cleaning stuck builds"}

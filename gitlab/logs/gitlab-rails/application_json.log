@@ -1,0 +1,2 @@
+# Logfile created on 2024-01-04 13:38:34 +0000 by logger.rb/v1.5.0
+{"severity":"DEBUG","time":"2024-01-04T13:38:34.373Z","message":"ActiveRecord connection established"}

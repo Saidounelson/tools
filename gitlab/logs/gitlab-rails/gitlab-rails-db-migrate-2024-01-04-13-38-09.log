@@ -1,0 +1,3 @@
+Running db:schema:load rake task
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:9: NOTICE:  extension "btree_gist" already exists, skipping
+psql:/opt/gitlab/embedded/service/gitlab-rails/db/structure.sql:11: NOTICE:  extension "pg_trgm" already exists, skipping

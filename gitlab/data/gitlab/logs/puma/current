@@ -1,0 +1,13 @@
+2024-01-04_13:46:40.20011 {"timestamp":"2024-01-04T13:46:40.199Z","pid":1596,"message":"Puma starting in cluster mode..."}
+2024-01-04_13:46:40.20195 {"timestamp":"2024-01-04T13:46:40.200Z","pid":1596,"message":"* Version 4.3.5.gitlab.3 (ruby 2.6.6-p146), codename: Mysterious Traveller"}
+2024-01-04_13:46:40.20298 {"timestamp":"2024-01-04T13:46:40.200Z","pid":1596,"message":"* Min threads: 4, max threads: 4"}
+2024-01-04_13:46:40.20397 {"timestamp":"2024-01-04T13:46:40.200Z","pid":1596,"message":"* Environment: production"}
+2024-01-04_13:46:40.20508 {"timestamp":"2024-01-04T13:46:40.200Z","pid":1596,"message":"* Process workers: 2"}
+2024-01-04_13:46:40.20616 {"timestamp":"2024-01-04T13:46:40.200Z","pid":1596,"message":"* Preloading application"}
+2024-01-04_13:47:50.23313 {"timestamp":"2024-01-04T13:47:50.232Z","pid":1596,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2024-01-04_13:47:50.23423 {"timestamp":"2024-01-04T13:47:50.233Z","pid":1596,"message":"* Listening on tcp://127.0.0.1:8080"}
+2024-01-04_13:47:50.23515 {"timestamp":"2024-01-04T13:47:50.233Z","pid":1596,"message":"! WARNING: Detected 3 Thread(s) started in app boot:"}
+2024-01-04_13:47:50.23601 {"timestamp":"2024-01-04T13:47:50.234Z","pid":1596,"message":"! #\u003cThread:0x00007f2645808f00@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/concurrent-ruby-1.1.6/lib/concurrent-ruby/concurrent/atomic/ruby_thread_local_var.rb:38 sleep_forever\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/concurrent-ruby-1.1.6/lib/concurrent-ruby/concurrent/atomic/ruby_thread_local_var.rb:40:in `pop'"}
+2024-01-04_13:47:50.23707 {"timestamp":"2024-01-04T13:47:50.234Z","pid":1596,"message":"! #\u003cThread:0x00007f2639a2bd20@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:334 sleep\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:337:in `sleep'"}
+2024-01-04_13:47:50.23840 {"timestamp":"2024-01-04T13:47:50.234Z","pid":1596,"message":"! #\u003cThread:0x00007f26238a3090@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/rack-timeout-0.5.2/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+2024-01-04_13:47:50.23909 {"timestamp":"2024-01-04T13:47:50.234Z","pid":1596,"message":"Use Ctrl-C to stop"}

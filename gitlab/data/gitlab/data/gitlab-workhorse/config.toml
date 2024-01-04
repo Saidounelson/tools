@@ -1,0 +1,4 @@
+[redis]
+URL = "redis://redis/"
+Password = ""
+

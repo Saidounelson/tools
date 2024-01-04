@@ -1,0 +1,59 @@
+version: "3.6"
+services:
+  gitlab:
+    image: "gitlab/gitlab-ce:13.4.3-ce.0"
+    restart: always
+    hostname: "gitlab.exemple.com"
+    links:
+      - postgresql:postgresql
+      - redis:redis
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        postgresql['enable'] = false
+        gitlab_rails['db_username'] = "gitlab"
+        gitlab_rails['db_password'] = "gitlab"
+        gitlab_rails['db_host'] = "postgresql"
+        gitlab_rails['db_port'] = "5432"
+        gitlab_rails['db_database'] = "gitlabhq_production"
+        gitlab_rails['db_adapter'] = 'postgresql'
+        gitlab_rails['db_encoding'] = 'utf8'
+        redis['enable'] = false
+        gitlab_rails['redis_host'] = 'redis'
+        gitlab_rails['redis_port'] = '6379'
+        external_url 'http://127.0.0.1:8888'
+        gitlab_rails['gitlab_shell_ssh_port'] = 22
+        gitlab_rails['smtp_enable'] = true
+        gitlab_rails['smtp_address'] = 'smtp.office365.com'
+        gitlab_rails['smtp_port'] = 587
+        gitlab_rails['smtp_user_name'] = ''
+        gitlab_rails['smtp_password'] = ''
+        gitlab_rails['smtp_domain'] = 'smtp.gmail.com'
+        gitlab_rails['smtp_authentication'] = 'login'
+        gitlab_rails['smtp_enable_starttls_auto'] = true
+        gitlab_rails['smtp_openssl_verify_mode'] = 'peer'
+        gitlab_rails['smtp_tls'] = false
+
+    ports:
+      # both ports must match the port from external_url above
+      - "8888:8888"
+      # the mapped port must match ssh_port specified above.
+      - "8822:22"
+    volumes:
+      - ./data/gitlab/config:/etc/gitlab:rw
+      - ./data/gitlab/logs:/var/log/gitlab:rw
+      - ./data/gitlab/data:/var/opt/gitlab:rw
+
+  postgresql:
+    restart: always
+    image: postgres:13.0-alpine
+    environment:
+      - POSTGRES_USER=gitlab
+      - POSTGRES_PASSWORD=gitlab
+      - POSTGRES_DB=gitlabhq_production
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql:rw
+    ports:
+      - "5432:5432"
+  redis:
+    restart: always
+    image: redis:6.0.9-alpine
